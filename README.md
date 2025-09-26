@@ -65,8 +65,8 @@ O projeto utiliza PostgreSQL (adaptado do Oracle) com as seguintes tabelas:
 ### Tela Principal
 - Lista os lotes cadastrados em um **DBGrid**  
 - Exibe percentual de mortalidade acumulada com cores:
-  - **Verde**: < 6%  
-  - **Amarelo**: 6% a 10%  
+  - **Verde**: < 5%  
+  - **Amarelo**: 5% a 10%  
   - **Vermelho**: > 10%  
 
 ### Tela de Pesagem
