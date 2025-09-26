@@ -1,0 +1,115 @@
+object Pesagens: TPesagens
+  Left = 444
+  Height = 253
+  Top = 306
+  Width = 490
+  Caption = 'Pesagens'
+  ClientHeight = 253
+  ClientWidth = 490
+  LCLVersion = '3.0.0.3'
+  object BtnLancaPesagem: TButton
+    Left = 264
+    Height = 48
+    Top = 178
+    Width = 144
+    Caption = 'Enviar'
+    Color = clGreen
+    TabOrder = 0
+    OnClick = BtnLancaPesagemClick
+  end
+  object LblQtdPesada: TLabel
+    Left = 24
+    Height = 18
+    Top = 34
+    Width = 189
+    Caption = 'Quantidade De Aves Pesadas'
+  end
+  object QtdPesada: TEdit
+    Left = 24
+    Height = 35
+    Top = 50
+    Width = 264
+    TabOrder = 1
+  end
+  object LblDtPesagem: TLabel
+    Left = 333
+    Height = 18
+    Top = 34
+    Width = 115
+    Caption = 'Data Da Pesagem'
+  end
+  object PsMedio: TEdit
+    Left = 24
+    Height = 35
+    Top = 122
+    Width = 424
+    TabOrder = 3
+  end
+  object LblPsMedio: TLabel
+    Left = 24
+    Height = 18
+    Top = 106
+    Width = 77
+    Caption = 'Peso Médio'
+  end
+  object DtPesagem: TDateTimePicker
+    Left = 333
+    Height = 24
+    Top = 60
+    Width = 80
+    CenturyFrom = 1941
+    DateDisplayOrder = ddoDMY
+    MaxDate = 2958465
+    MinDate = 2
+    TabOrder = 2
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    ParentShowHint = False
+    NullInputAllowed = False
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmNone
+    Date = 45925
+    Time = 0.725180879628169
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object BtnCancelar: TButton
+    Left = 64
+    Height = 48
+    Top = 178
+    Width = 136
+    Caption = 'Cancelar'
+    Color = clMaroon
+    TabOrder = 4
+    OnClick = BtnCancelarClick
+  end
+  object LblLote: TLabel
+    Left = 22
+    Height = 1
+    Top = 11
+    Width = 1
+  end
+  object PQConnection1: TPQConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Left = 245
+    Top = 32
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Left = 245
+    Top = 70
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    Macros = <>
+    Left = 245
+    Top = 106
+  end
+end

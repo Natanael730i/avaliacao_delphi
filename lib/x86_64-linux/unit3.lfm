@@ -1,0 +1,115 @@
+object Mortalidade: TMortalidade
+  Left = 433
+  Height = 347
+  Top = 240
+  Width = 511
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Mortalidades'
+  ClientHeight = 347
+  ClientWidth = 511
+  LCLVersion = '3.0.0.3'
+  object LblData: TLabel
+    Left = 328
+    Height = 18
+    Top = 41
+    Width = 138
+    Caption = 'Data do Lançamento'
+  end
+  object Data: TDateTimePicker
+    Left = 328
+    Height = 24
+    Top = 64
+    Width = 80
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 0
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmNone
+    Date = 45925
+    Time = 0.731689548614668
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object LblQtdMortos: TLabel
+    Left = 40
+    Height = 18
+    Top = 41
+    Width = 126
+    Caption = 'Número De Mortes'
+  end
+  object QtdMortos: TEdit
+    Left = 40
+    Height = 35
+    Top = 60
+    Width = 224
+    TabOrder = 1
+  end
+  object Observacoes: TMemo
+    Left = 25
+    Height = 112
+    Top = 124
+    Width = 455
+    TabOrder = 2
+  end
+  object LblObservacoes: TLabel
+    Left = 25
+    Height = 18
+    Top = 102
+    Width = 85
+    Caption = 'Observações'
+  end
+  object BtnLancar: TButton
+    Left = 304
+    Height = 48
+    Top = 260
+    Width = 144
+    Caption = 'Enviar'
+    Color = clGreen
+    TabOrder = 3
+    OnChangeBounds = BtnLancarClick
+    OnClick = BtnLancarClick
+  end
+  object BtnCancelar: TButton
+    Left = 72
+    Height = 48
+    Top = 260
+    Width = 145
+    Caption = 'Cancelar'
+    Color = clMaroon
+    TabOrder = 4
+    OnClick = BtnCancelarClick
+  end
+  object LblLote: TLabel
+    Left = 37
+    Height = 1
+    Top = 12
+    Width = 1
+  end
+  object PQConnection1: TPQConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Left = 272
+    Top = 28
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Left = 272
+    Top = 68
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    Macros = <>
+    Left = 272
+    Top = 116
+  end
+end

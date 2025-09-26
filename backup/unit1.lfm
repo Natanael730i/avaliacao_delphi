@@ -1,0 +1,110 @@
+object Form1: TForm1
+  Left = 409
+  Height = 336
+  Top = 277
+  Width = 637
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Granja'
+  ClientHeight = 336
+  ClientWidth = 637
+  OnShow = FormShow
+  LCLVersion = '3.0.0.3'
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 208
+    Top = 24
+    Width = 624
+    Color = clWindow
+    Columns = <>
+    DataSource = DsLotes
+    FixedCols = 0
+    Options = [dgTitles, dgColumnResize, dgColumnMove, dgColLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+    TabOrder = 0
+    OnDrawColumnCell = DBGrid1DrawColumnCell
+  end
+  object lblLotes: TLabel
+    Left = 19
+    Height = 18
+    Top = 4
+    Width = 36
+    Caption = 'Lotes'
+  end
+  object BtnMortalidade: TButton
+    Left = 384
+    Height = 48
+    Top = 248
+    Width = 147
+    Caption = 'Mortalidade'
+    TabOrder = 1
+    OnClick = BtnLancarMortalidadeClick
+  end
+  object BtnPesagem: TButton
+    Left = 120
+    Height = 48
+    Top = 248
+    Width = 133
+    Caption = 'Pesagem'
+    TabOrder = 2
+    OnClick = BtnLancarPesagemClick
+  end
+  object PQConnection1: TPQConnection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'granja_teste'
+    KeepConnection = True
+    Password = 'admin'
+    Transaction = SQLTransaction1
+    UserName = 'natanael'
+    HostName = 'localhost'
+    Left = 256
+    Top = 248
+  end
+  object DsLotes: TDataSource
+    DataSet = QryLotes
+    Left = 184
+    Top = 256
+  end
+  object QryLotes: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id_lote'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'descricao'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'data_entrada'
+        DataType = ftDate
+        Precision = -1
+      end    
+      item
+        Name = 'quantidade_inicial'
+        DataType = ftBCD
+        Precision = -1
+        Size = 4
+      end>
+    Database = PQConnection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 112
+    Top = 240
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = PQConnection1
+    Left = 368
+    Top = 256
+  end
+end
