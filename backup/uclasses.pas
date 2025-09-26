@@ -26,7 +26,6 @@ type
     property IDLote: Integer read FIDLote write FIDLote;
     property Descricao: string read FDescricao write FDescricao;
     property QuantidadeInicial: Integer read FQuantidadeInicial write FQuantidadeInicial;
-    function CreationTable():TSQLQuery;
   end;
 
   { TPesagem }

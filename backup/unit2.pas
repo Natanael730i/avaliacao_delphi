@@ -85,6 +85,7 @@ begin
      end;
 
   QryExec := TSQLQuery.Create(nil);
+  QryCheck := TSQLQuery.Create(nil);
   try
     QryExec.DataBase := F_Conexao;
     QryExec.Transaction := F_Transacao;

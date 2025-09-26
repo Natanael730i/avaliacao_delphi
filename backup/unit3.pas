@@ -110,7 +110,7 @@ begin
       QuantidadeTotal := QryCheck.FieldByName('total').AsInteger;
       QryCheck.Close;
 
-      if QuantidadeTotal + StrToInt(QtdMortos.)  > QuantidadeInicial then
+      if QuantidadeTotal + StrToInt(QtdMortos.Text)  > QuantidadeInicial then
       begin
         ShowMessage('Erro: A quantidade total pesagem ultrapassa a quantidade inicial do lote (' +
           IntToStr(QuantidadeInicial) + ').');
