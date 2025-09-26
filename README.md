@@ -117,7 +117,7 @@ O projeto utiliza PostgreSQL (adaptado do Oracle) com as seguintes tabelas:
 
 1. **Criar o banco e tabelas**
    - Abrir o PostgreSQL  
-   - Executar o script `dump.sql` para criar tabelas, sequências e funções  
+   - Executar os scripts `Criacao_Tabelas.sql` e `insercao_dados.sql` para criar tabelas, sequências e funções  
 
 2. **Abrir o projeto no Lazarus**
    - Abrir `Project.lpi` ou `Unit1.lpi`  
@@ -143,10 +143,3 @@ O projeto utiliza PostgreSQL (adaptado do Oracle) com as seguintes tabelas:
 - Todas as validações de quantidade (pesagem e mortalidade) estão implementadas  
 - Indicador de saúde do lote atualizado automaticamente  
 - Código estruturado com POO para fácil manutenção e extensão  
-
----
-
-## Contato
-
-- Enviar link do repositório para: **guilherme.algeri@sag.com.br**  
-- WhatsApp: **(46) 9 9132-5689**
