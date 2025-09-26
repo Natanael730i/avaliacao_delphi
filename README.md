@@ -1,7 +1,4 @@
-# Sistema de Gestão de Granjas – Avaliação Delphi
-
-**Flip Cursos e Engenharia**  
-Rua Assis Brasil, n° 448, Vila Isabel, Pato Branco-PR  
+# Sistema de Gestão de Granjas – Avaliação Delphi 
 
 **Avaliação Prática – Desenvolvedor Delphi**  
 
